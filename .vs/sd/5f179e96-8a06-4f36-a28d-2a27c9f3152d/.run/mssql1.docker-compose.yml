@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  sqlserver:
+    image: "MCR.MICROSOFT.COM/MSSQL/SERVER"
+    hostname: "sqlserver"
+    restart: always
+    ports: 
+        - 1433:1433
+    environment:
+      - ACCEPT_EULA="Y"
+      - SA_PASSWORD=761f19f6-a9c5-4932-b1a7-7bcf48a5bd10
